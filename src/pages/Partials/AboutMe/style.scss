@@ -1,0 +1,38 @@
+section#about_me {
+    padding: 5rem 0;
+    @media(max-width: 991px) {
+        padding: 3rem 0;
+    }
+    @media(max-width: 600px) {
+        padding: 2rem 0;
+    }
+    .infos {
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000;
+            @media(max-width: 991px) {
+                font-size: 2.5rem;
+            }
+            @media(max-width: 600px) {
+                font-size: 2rem;
+            }
+            span.text-dark {
+                color: #000 !important;
+            }
+            .text-bs-blue {
+                color:#5165FF ;
+            }
+        }
+        .social {
+            a {
+                color: #5165FF;
+                font-size: 1.5rem;
+                &:not(:last-child) {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+    
+}

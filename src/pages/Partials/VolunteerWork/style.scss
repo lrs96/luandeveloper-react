@@ -1,0 +1,49 @@
+section#voluntter_work {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, .9) 15%);
+    padding: 5rem 0;
+    @media(max-width: 991px) {
+        padding: 3rem;
+    }
+    @media(max-width: 600px) {
+        padding: 2rem;
+    }
+    
+    h2.h1 {
+        font-size: 3rem;
+        color: #fff;
+        .text-bs-blue {
+            color: #5165FF;
+        }
+        @media(max-width: 991px) {
+            font-size: 2.5rem;
+        }
+        @media(max-width: 600px) {
+            font-size: 2rem;
+        }
+
+    }
+
+    .card-work {
+        background-color: #4A4A4A;
+        .infos-card {
+            position: relative;
+            padding: 1.5rem 1rem 1rem;
+            p {
+                color: #fff;
+                &.work {
+                    display: flex;
+                    justify-content: center;
+                    .custom {
+                        position: absolute;
+                        top: -15px;
+                        text-align: center;
+                        background-color: #5165FF;
+                        font-weight: 500;
+                        padding: .2rem 2rem;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

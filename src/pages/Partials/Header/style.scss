@@ -1,0 +1,28 @@
+$bg-gray: rgba(18, 18, 18,1);
+
+
+$text-gray: #1B1B1B;
+header.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+
+    padding: 1rem 2rem;
+    ul, nav {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+    }
+    nav {
+        justify-content:space-between;
+    }
+
+    ul { 
+        list-style-type: none;
+        li {
+            padding: 0 .8rem;
+        }
+    }
+}
