@@ -4,14 +4,13 @@ import {FaLinkedinIn, FaGithubAlt, FaInstagram, FaFacebookF, FaWhatsapp, FaBehan
 import api from '../../../services/api';
 
 interface Sociais {
-
-    social_media: {
-        facebook: string,
-        instagram: string,
-        linkedin: string,
-        github: string,
-        behance: string
-    },
+    
+    social_media: [
+        {
+            social: string,
+            social_url: string
+        }
+    ]
 }
 
 const SocialMedia = () => {
@@ -20,6 +19,7 @@ const SocialMedia = () => {
     useEffect(() => {
         api.get('personal-data').then(response => {
             setSociais(response.data)
+            console.log(response.data)
         })
     }, [])
 
@@ -27,24 +27,14 @@ const SocialMedia = () => {
             <div className="component-social">
                 {sociais.map(social => (
                     <div className="social mt-3">
-                        <a className="social-item" href={social.social_media.linkedin} rel="noreferrer" target="_blank">
-                            <FaLinkedinIn />
-                        </a>
-                        <a className="social-item" href={social.social_media.github} rel="noopener" target="_blank">
-                            <FaGithubAlt />
-                        </a>
-                        <a className="social-item" href={social.social_media.instagram} rel="noopener" target="_blank">
-                            <FaInstagram />
-                        </a>
-                        <a className="social-item" href={social.social_media.facebook} rel="noopener" target="_blank">
-                            <FaFacebookF />
-                        </a>
-                        <a className="social-item" href={social.social_media.behance} rel="noopener" target="_blank">
-                            <FaBehance />
-                        </a>
-                        <a className="social-item" href="/" rel="noopener" target="_blank">
-                            <FaWhatsapp />
-                        </a>
+                        {social.social_media.map(social_item => (
+                            <a className="social-item"
+                                title={social_item.social}
+                                href={social_item.social_url}
+                                rel="noreferrer" target="_blank">
+                                            <FaLinkedinIn />
+                            </a>
+                            ))}
                     </div>
                 ))}
             </div>
