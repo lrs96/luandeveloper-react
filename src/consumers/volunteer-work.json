@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image_url": "comite-da-hackathon-brasil.svg",
+        "funcao": "Organizador",
+        "name_work": "Membro do comite da Hachathon Brasil",
+        "description": "Ajuda na organização de hackathon, palestras e workshops pela comunidade.",
+        "site": "https://hackathonbrasil.com.br/home/"
+      },
+      {
+        "id": 2,
+        "image_url": "wordcamp-2019-luan-rodrigues.svg",
+        "funcao": "Voluntário",
+        "name_work": "WordCamp São Paulo 2019",
+        "description": "Responsável por auxiliar os palestrantes e participantes do eventos, cuidar do tempo das palestras ou quaisquer necessidades que surgissem durante o evento.",
+        "site": "https://2019.saopaulo.wordcamp.org/"
+      },
+      {
+        "id": 3,
+        "image_url": "wordcamp-2018.svg",
+        "funcao": "Voluntário",
+        "name_work": "WordCamp São Paulo 2018",
+        "description": "Responsável por auxiliar os palestrantes e participantes do eventos, cuidar do tempo das palestras ou quaisquer necessidades que surgissem durante o evento.",
+        "site": "https://2018.saopaulo.wordcamp.org/"
+      }
+  ]

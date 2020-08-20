@@ -2,13 +2,17 @@ import React, { useEffect, useState} from 'react';
 import {FaLinkedinIn, FaGithubAlt, FaInstagram, FaFacebookF, FaWhatsapp, FaBehance  } from 'react-icons/fa';
 
 import api from '../../../services/api';
+import social_medias from '../../../consumers/social-media.json';
+
 
 interface Sociais {
     
     social_media: [
         {
+            id: Number,
             social: string,
-            social_url: string
+            social_url: string,
+            icon: string,
         }
     ]
 }
@@ -24,20 +28,17 @@ const SocialMedia = () => {
     }, [])
 
     return (
-            <div className="component-social">
-                {sociais.map(social => (
-                    <div className="social mt-3">
-                        {social.social_media.map(social_item => (
-                            <a className="social-item"
-                                title={social_item.social}
-                                href={social_item.social_url}
-                                rel="noreferrer" target="_blank">
-                                            <FaLinkedinIn />
-                            </a>
-                            ))}
-                    </div>
+        <div className="component-social">
+            <div className="social mt-3">
+                {social_medias.map(social_item => (
+                    <a className="social-item" key={social_item.id}
+                        title={social_item.social}
+                        href={social_item.social_url}
+                        rel="noreferrer" target="_blank">
+                    </a>
                 ))}
             </div>
+        </div>
     )
 }
 

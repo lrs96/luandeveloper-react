@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "social": "facebook",
+        "social_url": "https://www.facebook.com/luanlrs96",
+        "icon": "FaFacebookF"
+    },
+    {
+        "id": "2",
+        "social": "linkedin",
+        "social_url": "https://www.linkedin.com/in/luanlrs/",
+        "icon": "FaLinkedinIn"
+    },
+    {
+        "id": "3",
+        "social": "instagram",
+        "social_url": "https://www.instagram.com/luanrodrigues.py/",
+        "icon": "FaInstagram"
+    },
+    {
+        "id": "4",
+        "social": "github",
+        "social_url": "https://github.com/lrs96",
+        "icon": "FaGithubAlt"
+    },
+    {
+        "id": "5",
+        "social": "behance",
+        "social_url": "https://www.behance.net/luandeveloper",
+        "icon": "FaBehance"
+    }
+]
